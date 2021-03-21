@@ -1,0 +1,10 @@
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\Almacen.BL.dll.config
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\Almacen.BL.dll
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\Almacen.BL.pdb
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\EntityFramework.dll
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\EntityFramework.xml
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\obj\Debug\Almacen.BL.csprojResolveAssemblyReference.cache
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\obj\Debug\Almacen.BL.dll
+C:\Users\WAOS\Source\Repos\ADUANAL4\ALMACEN\Almacen.BL\obj\Debug\Almacen.BL.pdb
