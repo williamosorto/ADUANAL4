@@ -210,6 +210,7 @@
     <Content Include="Views\DetalleSolicitud\Index.cshtml" />
     <Content Include="Views\DetalleSolicitud\Crear.cshtml" />
     <Content Include="Views\DetalleSolicitud\Eliminar.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
