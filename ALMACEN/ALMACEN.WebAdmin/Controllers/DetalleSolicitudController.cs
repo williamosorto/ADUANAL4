@@ -37,7 +37,7 @@ namespace ALMACEN.WebAdmin.Controllers
 
             nuevaDetSolicitud.SolicitudId = id;
 
-            var servicios = _ServiciosBL.ObtenerServicios();
+            var servicios = _ServiciosBL.ObtenerServiciosActivos();
 
             ViewBag.ServicioId = new SelectList(servicios, "Id", "Descripcion");
 
@@ -60,7 +60,7 @@ namespace ALMACEN.WebAdmin.Controllers
                 return RedirectToAction("Index", new { id = detalleSolicitud.SolicitudId });
 
             }
-            var servicios = _ServiciosBL.ObtenerServicios();
+            var servicios = _ServiciosBL.ObtenerServiciosActivos();
 
             ViewBag.ServicioId = new SelectList(servicios, "Id", "Nombre");
 

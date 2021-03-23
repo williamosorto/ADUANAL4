@@ -57,6 +57,8 @@
     <Compile Include="Clientes.cs" />
     <Compile Include="ClientesBL.cs" />
     <Compile Include="Contexto.cs" />
+    <Compile Include="ReportedeVentas.cs" />
+    <Compile Include="ReportedeVentasBL.cs" />
     <Compile Include="Servicio.cs" />
     <Compile Include="ServiciosBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

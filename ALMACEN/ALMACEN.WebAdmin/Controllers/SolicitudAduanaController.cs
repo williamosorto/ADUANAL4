@@ -30,7 +30,7 @@ namespace ALMACEN.WebAdmin.Controllers
         {
             var nuevaSolicitud = new SolicitudAduana();
 
-            var clientes = _ClientesBL.ObtenerClientes();
+            var clientes = _ClientesBL.ObtenerClientesActivo();
 
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre");
 
@@ -53,7 +53,7 @@ namespace ALMACEN.WebAdmin.Controllers
                 return RedirectToAction("Index");
 
             }
-            var clientes = _ClientesBL.ObtenerClientes();
+            var clientes = _ClientesBL.ObtenerClientesActivo();
 
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre");
 
@@ -63,7 +63,7 @@ namespace ALMACEN.WebAdmin.Controllers
         public ActionResult Editar(int id)
         {
             var Solicitud = _SolicitudAduanaBL.ObtenerSolicitud(id);
-            var Clientes = _ClientesBL.ObtenerClientes();
+            var Clientes = _ClientesBL.ObtenerClientesActivo();
 
             ViewBag.ClienteId = new SelectList(Clientes, "Id", "Nombre", Solicitud.ClienteId);
             return View(Solicitud);
@@ -84,7 +84,7 @@ namespace ALMACEN.WebAdmin.Controllers
                 return RedirectToAction("Index");
 
             }
-            var clientes = _ClientesBL.ObtenerClientes();
+            var clientes = _ClientesBL.ObtenerClientesActivo();
 
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre", SolicitudAduana.ClienteId);
 

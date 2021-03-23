@@ -21,10 +21,17 @@ namespace Almacen.BL
 
         public List<Clientes> ObtenerClientes()
         {
-            ListadeClientes = _contexto.Clientes.ToList();
+            ListadeClientes = _contexto.Clientes.OrderBy(r=>r.Nombre).ToList();
 
             return ListadeClientes;
         }
+        public List<Clientes> ObtenerClientesActivo()
+        {
+            ListadeClientes = _contexto.Clientes.Where(s=> s.Activo==true).OrderBy(r => r.Nombre).ToList();
+
+            return ListadeClientes;
+        }
+
 
 
         public void GuardarClientes(Clientes clientes)

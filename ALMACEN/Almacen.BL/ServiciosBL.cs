@@ -19,10 +19,17 @@ namespace Almacen.BL
 
         public List<Servicio> ObtenerServicios()
         {
-            ListadeServicios = _contexto.Servicios.Include("Categoria").ToList();
+            ListadeServicios = _contexto.Servicios.Include("Categoria").OrderBy(r=>r.Categoria.Descripcion).ThenBy(r=> r.Descripcion).ToList();
 
             return ListadeServicios;
         }
+        public List<Servicio> ObtenerServiciosActivos()
+        {
+            ListadeServicios = _contexto.Servicios.Include("Categoria").Where(s => s.Activo == true).OrderBy(r=>r.Descripcion).ToList();
+
+            return ListadeServicios;
+        }
+
 
 
         public void GuardarServicio(Servicio servicio)
